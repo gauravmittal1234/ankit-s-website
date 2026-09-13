@@ -7,6 +7,10 @@ Static site for Arcus Design Build (ADB), Noida. No build step: plain HTML, CSS 
 - `assets/js/projects.js` — all project data (titles, locations, descriptions, image lists). Edit this file to change portfolio text.
 - `assets/img/work/<slug>/` — project images (`cover.jpg` plus numbered views)
 
+## Source uploads
+
+Raw photos and videos from the client go in `source/` (git-ignored). Processed, web-sized copies live under `assets/`.
+
 ## Editing
 
 - Contact details live in `index.html`, `work.html` (menu, contact section, footer, mobile bar).

@@ -69,7 +69,8 @@
     return (
       '<a class="card reveal" href="#project=' + p.slug + '" data-slug="' + p.slug + '">' +
       '<div class="card__media"><img loading="lazy" decoding="async" src="' + p.cover + '" width="900" height="675" alt="' + esc(p.title + ", " + p.location) + '">' +
-      '<span class="card__count">' + p.images.length + (p.images.length === 1 ? " view" : " views") + "</span></div>" +
+      '<span class="card__count">' + p.images.filter((im) => im.type !== "video").length + " views</span>" +
+      (p.images.some((im) => im.type === "video") ? '<span class="card__count card__count--film">▶ Film</span>' : "") + "</div>" +
       '<div class="card__body"><span class="card__tag">' + esc(p.catLabel) + "</span>" +
       '<h3 class="card__title">' + esc(p.title) + "</h3>" +
       '<p class="card__loc">' + esc(p.location) + "</p></div></a>"
@@ -136,7 +137,7 @@
     $("[data-next-link]", modal).addEventListener("click", (e) => { e.preventDefault(); step(1); });
     $("[data-gallery]", modal).addEventListener("click", (e) => {
       const f = e.target.closest("figure");
-      if (f) openLightbox(parseInt(f.dataset.index, 10));
+      if (f && !f.classList.contains("video")) openLightbox(parseInt(f.dataset.index, 10));
     });
 
     lightbox = document.createElement("div");
@@ -173,13 +174,17 @@
     $("[data-title]", modal).textContent = p.title;
     $("[data-loc]", modal).textContent = p.location;
     $("[data-scope]", modal).textContent = p.scope;
-    $("[data-count]", modal).textContent = p.images.length + (p.images.length === 1 ? " view" : " views");
+    const nImg = p.images.filter((im) => im.type !== "video").length, nVid = p.images.length - nImg;
+    $("[data-count]", modal).textContent = nImg + " views" + (nVid ? " · " + nVid + (nVid === 1 ? " film" : " films") : "");
     const descEl = $("[data-desc]", modal);
     descEl.textContent = p.desc;
     applyClamp(descEl, 3, true);
-    $("[data-gallery]", modal).innerHTML = p.images.map((im, i) =>
-      '<figure data-index="' + i + '"' + (im.w / im.h > 2.2 ? ' class="wide"' : (im.w < 900 ? ' class="small"' : "")) + '><img ' + (i < 2 ? "" : 'loading="lazy" ') + 'decoding="async" src="' + im.src + '" width="' + im.w + '" height="' + im.h + '" alt="' + esc(p.title + " view " + (i + 1)) + '"></figure>'
-    ).join("");
+    $("[data-gallery]", modal).innerHTML = p.images.map((im, i) => {
+      if (im.type === "video") {
+        return '<figure data-index="' + i + '" class="video wide"><video controls playsinline preload="none" poster="' + im.poster + '"><source src="' + im.src + '" type="video/mp4"></video><figcaption>' + esc(p.title) + ' · film with instrumental soundtrack</figcaption></figure>';
+      }
+      return '<figure data-index="' + i + '"' + (im.w / im.h > 2.2 ? ' class="wide"' : (im.w < 900 ? ' class="small"' : "")) + '><img ' + (i < 2 ? "" : 'loading="lazy" ') + 'decoding="async" src="' + im.src + '" width="' + im.w + '" height="' + im.h + '" alt="' + esc(p.title + " view " + (i + 1)) + '"></figure>';
+    }).join("");
     const prev = P[(idx - 1 + P.length) % P.length], next = P[(idx + 1) % P.length];
     $("[data-prev-link] span", modal).textContent = prev.title + " · " + prev.location;
     $("[data-next-link] span", modal).textContent = next.title + " · " + next.location;
@@ -192,6 +197,7 @@
   function step(d) { if (current == null) return; openProject(P[(current + d + P.length) % P.length].slug, false); history.replaceState({ project: P[current].slug }, "", "#project=" + P[current].slug); }
   function closeProject() {
     if (!modal) return;
+    $$("video", modal).forEach((v) => v.pause());
     modal.classList.remove("open");
     document.body.classList.remove("no-scroll");
     current = null;
@@ -211,7 +217,7 @@
     // preload neighbours
     [1, -1].forEach((d) => { const n = p.images[(lbIndex + d + p.images.length) % p.images.length]; if (n) { const pre = new Image(); pre.src = n.src; } });
   }
-  function lbGo(d) { const p = P[current]; lbIndex = (lbIndex + d + p.images.length) % p.images.length; lbShow(); }
+  function lbGo(d) { const p = P[current]; do { lbIndex = (lbIndex + d + p.images.length) % p.images.length; } while (p.images[lbIndex].type === "video"); lbShow(); }
   function closeLightbox() { lightbox && lightbox.classList.remove("open"); }
 
   document.addEventListener("click", (e) => {
@@ -406,6 +412,26 @@
       if (panel) panel.hidden = !open;
     });
   }
+
+  /* ---------- hero video: hide slideshow caption once the loop plays ---------- */
+  const heroVideo = $(".hero__video");
+  if (heroVideo && hero) {
+    heroVideo.addEventListener("playing", () => hero.classList.add("hero--video"), { once: true });
+    heroVideo.play().catch(() => {});
+  }
+
+  /* ---------- showreel ---------- */
+  const reel = $("[data-reel-modal]");
+  if (reel) {
+    const vid = $("video", reel);
+    const openReel = () => { reel.hidden = false; document.body.classList.add("no-scroll"); const hv = $(".hero__video"); if (hv) hv.pause(); vid.currentTime = 0; vid.play().catch(() => {}); };
+    const closeReel = () => { vid.pause(); reel.hidden = true; document.body.classList.remove("no-scroll"); const hv = $(".hero__video"); if (hv) hv.play().catch(() => {}); };
+    $$("[data-showreel]").forEach((b) => b.addEventListener("click", openReel));
+    $("[data-reel-close]", reel).addEventListener("click", closeReel);
+    reel.addEventListener("click", (e) => { if (e.target === reel) closeReel(); });
+    document.addEventListener("keydown", (e) => { if (e.key === "Escape" && !reel.hidden) closeReel(); });
+  }
+  $$("[data-cs-count]").forEach((el) => { el.textContent = (window.ADB_CASE_STUDIES || []).length; });
 
   /* ---------- misc ---------- */
   $$("[data-year]").forEach((el) => { el.textContent = new Date().getFullYear(); });

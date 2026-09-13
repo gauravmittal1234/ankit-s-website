@@ -13,8 +13,8 @@
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230a0a0a'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-family='Helvetica,Arial,sans-serif' font-weight='800' font-size='30' fill='%23fff' letter-spacing='-2'%3EADB%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css?v=202609131737">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Montserrat:wght@900&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css?v=202609131828">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -39,10 +39,7 @@
 <!-- ===== Navigation ===== -->
 <header class="nav" data-solid="false">
   <div class="container nav__inner">
-    <a class="logo" href="index.html" aria-label="Arcus Design Build home">
-      <span class="logo__mark"><span>ADB</span></span>
-      <span class="logo__text"><span class="logo__name">Arcus Design Build</span><span class="logo__tag">Design · Build · Inspire</span></span>
-    </a>
+    <a class="logo" href="index.html" aria-label="Arcus Design Build home"><span class="logo__mark">ADB</span><span class="logo__script">Arcus Design Build</span></a>
     <nav class="nav__links" aria-label="Primary">
       <a href="work.html">Portfolio</a>
       <a href="case-studies.html">Case studies</a>
@@ -81,6 +78,7 @@
     <picture data-caption="School lobby, Gajraula"><source media="(max-width: 767px)" srcset="assets/img/hero/4-m.jpg"><img src="assets/img/hero/4.jpg" alt="" loading="lazy"></picture>
     <picture data-caption="Highway Food Hub, Gajraula"><source media="(max-width: 767px)" srcset="assets/img/hero/5-m.jpg"><img src="assets/img/hero/5.jpg" alt="" loading="lazy"></picture>
   </div>
+  <video class="hero__video" autoplay muted loop playsinline preload="metadata" poster="assets/video/hero-poster.jpg" aria-hidden="true"><source src="assets/video/hero-loop.mp4" type="video/mp4"></video>
   <div class="hero__shade"></div>
   <div class="container hero__content">
     <span class="eyebrow eyebrow--caps">Architecture · Interiors · MEP · Project Management</span>
@@ -88,7 +86,7 @@
     <p class="hero__lead">The design-build partner behind India's leading food courts, restaurants and retail brands.</p>
     <div class="hero__cta">
       <a class="btn btn--white" href="#contact">Talk to us</a>
-      <a class="btn btn--outline-white" href="work.html">View portfolio</a>
+      <button class="btn btn--outline-white" type="button" data-showreel><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>Watch the showreel</button>
     </div>
   </div>
   <div class="container hero__foot">
@@ -130,8 +128,8 @@
     <div class="stats reveal">
       <div class="stat"><div class="stat__num">15<span class="muted">+</span></div><div class="stat__label">Years of experience</div></div>
       <div class="stat"><div class="stat__num"><span data-project-count>37</span></div><div class="stat__label">Projects in our portfolio</div></div>
-      <div class="stat"><div class="stat__num">22</div><div class="stat__label">Food courts, restaurants &amp; cafés designed</div></div>
-      <div class="stat"><div class="stat__num">12<span class="muted">+</span></div><div class="stat__label">Cities across India</div></div>
+      <div class="stat"><div class="stat__num">23</div><div class="stat__label">Food courts, restaurants &amp; cafés designed</div></div>
+      <div class="stat"><div class="stat__num">15<span class="muted">+</span></div><div class="stat__label">Cities across India</div></div>
     </div>
   </div>
 </section>
@@ -145,11 +143,29 @@
     </div>
     <div class="why">
       <div class="why__item reveal"><span class="why__num">01</span><h3>The principal architect is on your project</h3><p>Ankit Pandey leads every job personally, from the first site visit to handover. No hand-off to a junior team once the contract is signed.</p><span class="why__proof">15+ years · Corporate, retail, hospitality, residential</span></div>
-      <div class="why__item reveal"><span class="why__num">02</span><h3>F&amp;B and retail are our home ground</h3><p>Twenty-two food courts, restaurants and cafés in the portfolio, for brands whose standards leave no room for guesswork.</p><span class="why__proof">PVR · Yum! Brands · Devyani · Sapphire Foods · TFS</span></div>
+      <div class="why__item reveal"><span class="why__num">02</span><h3>F&amp;B and retail are our home ground</h3><p>Twenty-three food courts, restaurants and cafés in the portfolio, for brands whose standards leave no room for guesswork.</p><span class="why__proof">PVR · Yum! Brands · Devyani · Sapphire Foods · TFS</span></div>
       <div class="why__item reveal"><span class="why__num">03</span><h3>Design, MEP and delivery in one contract</h3><p>Architecture, interiors, HVAC, electrical, fire-fighting and project management from one studio, so drawings are coordinated before they reach site.</p><span class="why__proof">One brief, one team, one point of accountability</span></div>
       <div class="why__item reveal"><span class="why__num">04</span><h3>You see it before it is built</h3><p>Every project is resolved in 3D from the vantage points that matter, so you approve a space you have effectively walked through.</p><span class="why__proof">Up to 14 camera views per project</span></div>
       <div class="why__item reveal"><span class="why__num">05</span><h3>Approvals and compliance, handled</h3><p>Byelaw calculations, zoning layouts and fire codes are part of the design, not an afterthought. International compliance auditing experience in Japan and South Korea.</p><span class="why__proof">Approved zoning layout on a 4-acre highway site</span></div>
       <div class="why__item reveal"><span class="why__num">06</span><h3>Competitive pricing without compromise</h3><p>Strategic project management that optimises cost while protecting design integrity. Future-ready spaces, priced to win.</p><span class="why__proof">The Arcus win-win formula</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Showreel ===== -->
+<section class="section section--tight" id="showreel">
+  <div class="container">
+    <div class="reel reveal">
+      <button class="reel__poster" type="button" data-showreel aria-label="Play the ADB showreel">
+        <img src="assets/video/showreel-poster.jpg" alt="" width="1280" height="720" loading="lazy">
+        <span class="reel__play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+      </button>
+      <div class="reel__text">
+        <span class="eyebrow">Showreel</span>
+        <h2 class="h2 title-bar">See the work <span class="accent">in motion</span></h2>
+        <p class="lead" style="margin-top:1rem">Ninety seconds through the Gajraula highway food hub, the built Yo! China outlet in Noida and a site under construction.</p>
+        <div style="margin-top:1.2rem"><button class="btn" type="button" data-showreel>Play showreel</button></div>
+      </div>
     </div>
   </div>
 </section>
@@ -191,13 +207,14 @@
       <article class="service reveal">
         <div class="service__head"><span class="service__num">03</span><span class="service__icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1L7 17M17 7l2.1-2.1"/></svg></span></div>
         <h3 class="service__title">MEP Services</h3>
-        <p class="service__desc">Mechanical, electrical and fire systems engineered for comfort, efficiency and compliance.</p>
+        <p class="service__desc">Mechanical, electrical, plumbing and fire systems engineered for comfort, efficiency and compliance, with NEXA Designs.</p>
         <button class="service__toggle" type="button" aria-expanded="false">What's included</button>
         <ul class="service__list" hidden>
           <li>HVAC layouts and equipment selection</li>
           <li>Electrical design: power distribution, lighting layouts, load sheets and panel specifications</li>
           <li>Fire detection and suppression: sprinklers, alarms, extinguishers and emergency lighting</li>
-          <li>Designed to relevant codes and regulations</li>
+          <li>Plumbing and drainage design</li>
+          <li>Designed to relevant codes, with BIM and CFD modelling where it helps</li>
         </ul>
       </article>
       <article class="service reveal">
@@ -212,8 +229,37 @@
           <li>Seamless transition from concept to completion and handover</li>
         </ul>
       </article>
+      <article class="service reveal">
+        <div class="service__head"><span class="service__num">05</span><span class="service__icon"><svg viewBox="0 0 24 24"><path d="M4 20V8l8-4 8 4v12M4 12h16M4 16h16M8 8v12M16 8v12"/></svg></span></div>
+        <h3 class="service__title">Structural Engineering</h3>
+        <p class="service__desc">Structural and civil design delivered with our engineering partner, so the architecture is buildable from day one.</p>
+        <button class="service__toggle" type="button" aria-expanded="false">What's included</button>
+        <ul class="service__list" hidden>
+          <li>Structural systems, framing and foundation design</li>
+          <li>Civil and structural drawings for tender and construction</li>
+          <li>Structural checks for interiors, mezzanines and signage</li>
+          <li>Delivered with P Arora &amp; Associates, structural consultants since 1980</li>
+        </ul>
+      </article>
     </div>
-    <p class="services__note">Architectural design and build services are led by Arcus. MEP and building engineering services are delivered with partner support.</p>
+    <div class="partners reveal">
+      <div class="partners__head"><span class="eyebrow">Execution partners</span><h3 class="h3">One contract, specialist engineers behind it</h3><p class="muted">ADB leads design and build. For structural and MEP engineering we work with two established practices, coordinated by us so you deal with one team.</p></div>
+      <div class="partners__grid">
+        <article class="partner">
+          <span class="partner__tag">Structural &amp; civil</span>
+          <h4>P Arora &amp; Associates Pvt. Ltd.</h4>
+          <p>Multi-disciplinary structural consultancy established in 1980, based in DLF Phase 2, Gurugram. Structural and civil engineering for residential, office, industrial and mixed-use buildings, working alongside leading architecture studios.</p>
+          <div class="partner__links"><a href="https://www.archdaily.com/professional/p-arora-associates-pvt-ltd-2632" target="_blank" rel="noopener">Profile on ArchDaily</a><a href="https://www.linkedin.com/in/piyush-arora-71ba7a1b7/" target="_blank" rel="noopener">Piyush Arora on LinkedIn</a></div>
+        </article>
+        <article class="partner">
+          <span class="partner__tag">MEP engineering</span>
+          <h4>NEXA Designs</h4>
+          <p>Engineering design practice in Sector 77, Faridabad, founded by mechanical engineer Prashant Kislay with experience across Singapore, Australia and Japan. HVAC, electrical, plumbing and fire-protection design to global codes, with BIM and CFD modelling.</p>
+          <div class="partner__links"><a href="https://www.nexadesigns.in/" target="_blank" rel="noopener">nexadesigns.in</a></div>
+        </article>
+      </div>
+    </div>
+    <p class="services__note">Architectural design and build services are led by Arcus. Structural and MEP engineering are delivered with the partners above under ADB's coordination.</p>
   </div>
 </section>
 
@@ -234,10 +280,10 @@
   <div class="container">
     <div class="section-head reveal">
       <div><span class="eyebrow">Case studies</span><h2 class="h2 title-bar">How ADB has helped clients <span class="accent">on the factors that matter</span></h2></div>
-      <p class="lead">Brand rollouts, mall coordination, approvals, tight sites, budgets. Fourteen short case studies on the questions clients ask before appointing an architect.</p>
+      <p class="lead">Brand rollouts, mall coordination, approvals, tight sites, budgets. <span data-cs-count>13</span> short case studies on the questions clients ask before appointing an architect.</p>
     </div>
     <div class="cs-grid" data-cs-teaser="3"></div>
-    <div class="work-more"><a class="btn btn--ghost" href="case-studies.html"><span>Read all 14 case studies</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+    <div class="work-more"><a class="btn btn--ghost" href="case-studies.html"><span>Read all <span data-cs-count>13</span> case studies</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
   </div>
 </section>
 
@@ -324,7 +370,7 @@
       <a class="sector" href="work.html#cat=commercial">Retail &amp; malls</a>
       <a class="sector" href="work.html#cat=commercial">Corporate offices</a>
       <a class="sector" href="work.html#cat=residential">Residential</a>
-      <a class="sector" href="work.html#cat=architecture">Hospitality &amp; guest houses</a>
+      <a class="sector" href="work.html#cat=architecture">Master planning</a>
       <a class="sector" href="work.html#cat=architecture">Highway &amp; wayside amenities</a>
       <a class="sector" href="work.html#cat=commercial">Institutional &amp; campus</a>
     </div>
@@ -336,7 +382,7 @@
   <div class="container">
     <div class="section-head reveal">
       <div><span class="eyebrow">Our team</span><h2 class="h2 title-bar">Led by practitioners, <span class="accent">not account managers</span></h2></div>
-      <p class="lead">Architecture, interiors, business and Vastu expertise in one room, so every decision is made with the whole project in view.</p>
+      <p class="lead">Architecture, interiors and Vastu expertise in one room, with structural and MEP partners on call, so every decision is made with the whole project in view.</p>
     </div>
     <div class="team">
       <article class="member reveal">
@@ -367,16 +413,6 @@
           <details class="member__more"><summary>More about Ravish</summary><p>Ancient wisdom applied with modern solutions for health, wealth and success, integrated with the design rather than imposed on it.</p></details>
         </div>
       </article>
-      <article class="member reveal">
-        <div class="member__photo"><div class="member__mono" aria-hidden="true">LK</div></div>
-        <div class="member__body">
-          <h3 class="member__name">Lokesh Kashyap</h3>
-          <p class="member__role">Business &amp; Partnerships</p>
-          <p class="member__bio">Formerly with KFC and Pizza Hut (Sapphire Foods India) and McDonald's (Connaught Plaza Restaurants). Brings QSR operating experience to every brief.</p>
-          <details class="member__more"><summary>More about Lokesh</summary><p>Strategic leadership, business growth, client focus and a long-term view to every partnership.</p></details>
-          <div class="member__links"><a href="tel:+919711112385">+91 97111 12385</a><a href="mailto:Lokeshkashyap2003@gmail.com">Lokeshkashyap2003@gmail.com</a></div>
-        </div>
-      </article>
     </div>
   </div>
 </section>
@@ -392,8 +428,8 @@
     </div>
     <div class="faq reveal">
       <details class="faq__item"><summary>Do you handle both design and execution?</summary><p>Yes. Architectural design and build services are led by Arcus, with MEP and building engineering delivered through partner support under our coordination. You get one team from concept to handover, or design-only if that is what the project needs.</p></details>
-      <details class="faq__item"><summary>What kinds of projects do you take on?</summary><p>Food courts and QSR outlets, restaurants and cafés, retail stores and mall interiors, corporate offices, homes, guest houses and highway or wayside destinations, from a single kiosk to a four-acre masterplan.</p></details>
-      <details class="faq__item"><summary>Where do you work?</summary><p>The studio is in Sector 63, Noida. Projects in the portfolio span Delhi NCR, Mumbai, Lucknow, Kolkata, Zirakpur and Panchkula, Dehradun, Himachal Pradesh and highway sites across Uttar Pradesh. We travel for site work wherever the project is.</p></details>
+      <details class="faq__item"><summary>What kinds of projects do you take on?</summary><p>Food courts and QSR outlets, restaurants and cafés, retail stores and mall interiors, corporate offices, homes, highway food hubs and wayside destinations, from a single kiosk to a four-acre masterplan.</p></details>
+      <details class="faq__item"><summary>Where do you work?</summary><p>The studio is in Sector 63, Noida. Projects in the portfolio span Delhi NCR, Mumbai, Lucknow, Agra, Kolkata, Barnala, Zirakpur and Panchkula, Dehradun and highway sites across Uttar Pradesh. We travel for site work wherever the project is.</p></details>
       <details class="faq__item"><summary>How does the process work, and how long does it take?</summary><p>Three stages: Design (site study, brief, concept and 3D views), Engineer (detailed drawings, MEP, compliance and tender documents) and Execute (vendor coordination, site supervision and handover). Timelines depend on the size of the site and the approvals involved; after the first site visit we give you a stage-wise programme in writing.</p></details>
       <details class="faq__item"><summary>How do you keep a project on budget?</summary><p>By deciding early. Materials, lighting and MEP are resolved in the drawings, so there are fewer surprises on site. Strategic project management then tracks cost against the estimate through delivery, and we optimise without cutting the design that made you appoint us.</p></details>
       <details class="faq__item"><summary>Can you work to our brand guidelines or franchise standards?</summary><p>Yes, that is most of our work. We have delivered outlets for international and national brands where the identity is fixed and the site is not, and we build template stores that make multi-city rollouts faster.</p></details>
@@ -476,8 +512,9 @@
   <div class="container">
     <div class="footer__grid">
       <div>
-        <a class="logo" href="index.html"><span class="logo__mark"><span>ADB</span></span><span class="logo__text"><span class="logo__name">Arcus Design Build</span><span class="logo__tag">Design · Build · Inspire</span></span></a>
-        <p class="footer__tag">Your one-stop project partner. Architecture, interior design, MEP services and project management for commercial and residential spaces.</p>
+        <a class="logo" href="index.html" aria-label="Arcus Design Build home"><span class="logo__mark">ADB</span><span class="logo__script">Arcus Design Build</span></a>
+        <p class="footer__tag">Your one-stop project partner. Architecture, interior design, structural and MEP engineering and project management for commercial and residential spaces.</p>
+        <img class="footer__plate" src="assets/img/brand/adb-plate.jpg" alt="ADB Arcus Design Build" width="600" height="306" loading="lazy">
       </div>
       <div>
         <h4>Quick links</h4>
@@ -506,8 +543,12 @@
   <a href="mailto:ankit@thearcusdesignbuild.com"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>Email</a>
 </nav>
 
-<script src="assets/js/projects.js?v=202609131737"></script>
-<script src="assets/js/casestudies.js?v=202609131737"></script>
-<script src="assets/js/main.js?v=202609131737"></script>
+<div class="reel-modal" data-reel-modal hidden>
+  <button class="reel-modal__close" type="button" data-reel-close aria-label="Close showreel"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18" stroke-linecap="round"/></svg></button>
+  <video class="reel-modal__video" controls playsinline preload="none" poster="assets/video/showreel-poster.jpg"><source src="assets/video/showreel.mp4" type="video/mp4"></video>
+</div>
+<script src="assets/js/projects.js?v=202609131828"></script>
+<script src="assets/js/casestudies.js?v=202609131828"></script>
+<script src="assets/js/main.js?v=202609131828"></script>
 </body>
 </html>

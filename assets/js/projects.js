@@ -65,11 +65,18 @@ window.ADB_PROJECTS = [
   "title": "Yo! China",
   "location": "Noida, Uttar Pradesh",
   "cat": "restaurant",
-  "scope": "Interior design · Facade · 3D visualisation",
+  "scope": "Interior design · Facade · Built and photographed on site",
   "featured": true,
-  "desc": "A full-floor restaurant and bar with a deep-green arched facade, a long back-bar under woven pendant lights, private booths with lantern canopies and a sports lounge at the rear. Twelve camera views were developed to resolve every sightline before fit-out.",
+  "desc": "A full-floor restaurant and bar with a deep-green arched facade, a long back-bar under woven pendant lights, private booths with lantern canopies and a sports lounge at the rear. Twelve camera views were developed to resolve every sightline before fit-out. The outlet is now built; the site film shows the finished facade, entrance and bar.",
   "cover": "assets/img/work/yo-china-noida/cover.jpg",
   "images": [
+   {
+    "type": "video",
+    "src": "assets/video/yo-china-noida-site.mp4",
+    "poster": "assets/video/yo-china-noida-site.jpg",
+    "w": 960,
+    "h": 544
+   },
    {
     "src": "assets/img/work/yo-china-noida/01.jpg",
     "w": 1600,
@@ -1071,6 +1078,34 @@ window.ADB_PROJECTS = [
   "featured": false
  },
  {
+  "slug": "food-forum-agra",
+  "title": "Food Forum",
+  "location": "Agra, Uttar Pradesh",
+  "cat": "food-court",
+  "scope": "Architecture · Facade · Signage",
+  "featured": false,
+  "desc": "A standalone food court pavilion near the Taj Mahal, clad in red sandstone with jali panels and arched glazing that glows at night. A 90 ft pylon carries the Food Forum identity and its brands, from Burger King and KFC to Pizza Hut and Subway, to highway traffic.",
+  "cover": "assets/img/work/food-forum-agra/cover.jpg",
+  "images": [
+   {
+    "src": "assets/img/work/food-forum-agra/01.jpg",
+    "w": 1126,
+    "h": 1086
+   },
+   {
+    "src": "assets/img/work/food-forum-agra/02.jpg",
+    "w": 1084,
+    "h": 1086
+   },
+   {
+    "src": "assets/img/work/food-forum-agra/03.jpg",
+    "w": 1146,
+    "h": 912
+   }
+  ],
+  "catLabel": "Food Courts"
+ },
+ {
   "slug": "food-hub-dhampur",
   "title": "Food Hub Commercial",
   "location": "Nanglasari, Dhampur, Bijnor, Uttar Pradesh",
@@ -1192,69 +1227,6 @@ window.ADB_PROJECTS = [
   "featured": false
  },
  {
-  "slug": "guest-house-hamirpur",
-  "title": "Guest House",
-  "location": "Hamirpur, Himachal Pradesh",
-  "cat": "architecture",
-  "scope": "Architecture · Byelaw planning · 3D views",
-  "desc": "A G+3 hillside guest house with a pitched green roof, deep timber-framed verandas and stone-clad walls. Floor plans and byelaw calculations were worked out for a 2,300 sq m site with 1,733 sq m of built-up area.",
-  "cover": "assets/img/work/guest-house-hamirpur/cover.jpg",
-  "images": [
-   {
-    "src": "assets/img/work/guest-house-hamirpur/01.jpg",
-    "w": 1536,
-    "h": 864
-   },
-   {
-    "src": "assets/img/work/guest-house-hamirpur/02.jpg",
-    "w": 1536,
-    "h": 917
-   },
-   {
-    "src": "assets/img/work/guest-house-hamirpur/03.jpg",
-    "w": 1536,
-    "h": 864
-   },
-   {
-    "src": "assets/img/work/guest-house-hamirpur/04.jpg",
-    "w": 1536,
-    "h": 864
-   },
-   {
-    "src": "assets/img/work/guest-house-hamirpur/05.jpg",
-    "w": 1536,
-    "h": 977
-   },
-   {
-    "src": "assets/img/work/guest-house-hamirpur/06.jpg",
-    "w": 1536,
-    "h": 995
-   },
-   {
-    "src": "assets/img/work/guest-house-hamirpur/07.jpg",
-    "w": 1536,
-    "h": 1089
-   },
-   {
-    "src": "assets/img/work/guest-house-hamirpur/08.jpg",
-    "w": 1536,
-    "h": 1192
-   },
-   {
-    "src": "assets/img/work/guest-house-hamirpur/09.jpg",
-    "w": 1336,
-    "h": 927
-   },
-   {
-    "src": "assets/img/work/guest-house-hamirpur/10.jpg",
-    "w": 938,
-    "h": 1016
-   }
-  ],
-  "catLabel": "Architecture & Master Planning",
-  "featured": false
- },
- {
   "slug": "gajraula-food-hub",
   "title": "Gajraula Highway Food Hub",
   "location": "Gajraula, Delhi–Moradabad Highway",
@@ -1264,6 +1236,13 @@ window.ADB_PROJECTS = [
   "desc": "A highway destination with McDonald's and KFC drive-thrus, a colonnaded food court and game zone, retail shops, a lattice-lit dhaba, a recreational park with fountains and separate washroom blocks, all arranged around a landscaped loop road.",
   "cover": "assets/img/work/gajraula-food-hub/cover.jpg",
   "images": [
+   {
+    "type": "video",
+    "src": "assets/video/gajraula-walkthrough.mp4",
+    "poster": "assets/video/gajraula-walkthrough.jpg",
+    "w": 960,
+    "h": 544
+   },
    {
     "src": "assets/img/work/gajraula-food-hub/01.jpg",
     "w": 1600,
@@ -1331,6 +1310,101 @@ window.ADB_PROJECTS = [
    },
    {
     "src": "assets/img/work/gajraula-food-hub/14.jpg",
+    "w": 1600,
+    "h": 900
+   },
+   {
+    "type": "video",
+    "src": "assets/video/gajraula-on-site.mp4",
+    "poster": "assets/video/gajraula-on-site.jpg",
+    "w": 960,
+    "h": 544
+   }
+  ],
+  "catLabel": "Architecture & Master Planning"
+ },
+ {
+  "slug": "food-hub-barnala",
+  "title": "Highway Food Hub",
+  "location": "Barnala, Punjab",
+  "cat": "architecture",
+  "scope": "Architecture · Master planning · Concept sketches",
+  "featured": true,
+  "desc": "A highway food and retail destination planned as an arcaded street: KFC and McDonald's drive-thrus at the road edge, a Costa Coffee and Gopal Ji at the entrance, and a pergola-covered courtyard of arched shopfronts with a landscaped roundabout and parking. Concept sketches issued for client review.",
+  "cover": "assets/img/work/food-hub-barnala/cover.jpg",
+  "images": [
+   {
+    "src": "assets/img/work/food-hub-barnala/01.jpg",
+    "w": 1600,
+    "h": 900
+   },
+   {
+    "src": "assets/img/work/food-hub-barnala/02.jpg",
+    "w": 1600,
+    "h": 900
+   },
+   {
+    "src": "assets/img/work/food-hub-barnala/03.jpg",
+    "w": 1600,
+    "h": 900
+   },
+   {
+    "src": "assets/img/work/food-hub-barnala/04.jpg",
+    "w": 1600,
+    "h": 900
+   },
+   {
+    "src": "assets/img/work/food-hub-barnala/05.jpg",
+    "w": 1600,
+    "h": 900
+   },
+   {
+    "src": "assets/img/work/food-hub-barnala/06.jpg",
+    "w": 1600,
+    "h": 900
+   },
+   {
+    "src": "assets/img/work/food-hub-barnala/07.jpg",
+    "w": 1600,
+    "h": 900
+   },
+   {
+    "src": "assets/img/work/food-hub-barnala/08.jpg",
+    "w": 1600,
+    "h": 900
+   },
+   {
+    "src": "assets/img/work/food-hub-barnala/09.jpg",
+    "w": 1600,
+    "h": 900
+   },
+   {
+    "src": "assets/img/work/food-hub-barnala/10.jpg",
+    "w": 1600,
+    "h": 900
+   },
+   {
+    "src": "assets/img/work/food-hub-barnala/11.jpg",
+    "w": 1600,
+    "h": 900
+   },
+   {
+    "src": "assets/img/work/food-hub-barnala/12.jpg",
+    "w": 1600,
+    "h": 900
+   },
+   {
+    "src": "assets/img/work/food-hub-barnala/13.jpg",
+    "w": 1600,
+    "h": 900
+   },
+   {
+    "src": "assets/img/work/food-hub-barnala/14.jpg",
+    "w": 1600,
+    "h": 900
+   },
+   {
+    "src": "assets/img/work/food-hub-barnala/15.jpg",
     "w": 1600,
     "h": 900
    }

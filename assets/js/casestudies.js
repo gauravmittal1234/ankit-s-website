@@ -92,24 +92,6 @@ window.ADB_CASE_STUDIES = [
     ]
   },
   {
-    id: "byelaws",
-    theme: "Byelaws and compliance",
-    title: "A hillside guest house that uses the site well and stays inside the rules",
-    brand: "Private client",
-    location: "Hamirpur, Himachal Pradesh",
-    project: "guest-house-hamirpur",
-    challenge: "Hill-state byelaws limit ground coverage, floor area ratio and height. The client wanted a guest house with generous rooms and verandas, and no risk of a compliance objection.",
-    approach: [
-      "Started with the byelaw table: permissible ground coverage, FAR and height were tabulated against the design at every stage.",
-      "Designed a G+3 block with a pitched roof and deep timber verandas that suits the climate and the local architecture.",
-      "Issued floor plans, a site plan and eight 3D views for the client and the sanctioning authority."
-    ],
-    outcome: [
-      "About 1,733 sq m of built-up area on a 2,300 sq m site, using 37% ground coverage against 50% permitted and staying under the 18.5 m height limit.",
-      "Headroom left in the FAR for a later phase."
-    ]
-  },
-  {
     id: "highway-destination",
     theme: "Destination design",
     title: "Making drivers stop: the Gajraula highway food hub",

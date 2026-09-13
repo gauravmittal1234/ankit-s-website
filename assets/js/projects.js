@@ -285,6 +285,193 @@ window.ADB_PROJECTS = [
   "featured": false
  },
  {
+  "slug": "burger-king-i-generation",
+  "title": "Burger King",
+  "location": "I-Generation Mall, Chandausi, Uttar Pradesh",
+  "cat": "restaurant",
+  "scope": "Architecture · Drive-thru · Interiors · 3D visualisation",
+  "featured": true,
+  "desc": "A corner Burger King with a drive-thru lane, BK Café and full-height glazing under a red band and Devanagari signage. Inside, the Home of the Whopper wall in walnut, green and orange booth seating, flame-grill graphics and the crown-and-fries play seat carry the brand's current global identity.",
+  "cover": "assets/img/work/burger-king-i-generation/cover.jpg",
+  "images": [
+   {
+    "src": "assets/img/work/burger-king-i-generation/01.jpg",
+    "w": 1600,
+    "h": 724
+   },
+   {
+    "src": "assets/img/work/burger-king-i-generation/02.jpg",
+    "w": 1600,
+    "h": 724
+   },
+   {
+    "src": "assets/img/work/burger-king-i-generation/03.jpg",
+    "w": 1600,
+    "h": 819
+   },
+   {
+    "src": "assets/img/work/burger-king-i-generation/04.jpg",
+    "w": 1600,
+    "h": 724
+   },
+   {
+    "src": "assets/img/work/burger-king-i-generation/05.jpg",
+    "w": 1600,
+    "h": 724
+   },
+   {
+    "src": "assets/img/work/burger-king-i-generation/06.jpg",
+    "w": 1600,
+    "h": 724
+   },
+   {
+    "src": "assets/img/work/burger-king-i-generation/07.jpg",
+    "w": 1600,
+    "h": 724
+   },
+   {
+    "src": "assets/img/work/burger-king-i-generation/08.jpg",
+    "w": 1600,
+    "h": 724
+   },
+   {
+    "src": "assets/img/work/burger-king-i-generation/09.jpg",
+    "w": 1600,
+    "h": 724
+   },
+   {
+    "src": "assets/img/work/burger-king-i-generation/10.jpg",
+    "w": 1600,
+    "h": 724
+   },
+   {
+    "src": "assets/img/work/burger-king-i-generation/11.jpg",
+    "w": 1600,
+    "h": 724
+   }
+  ],
+  "catLabel": "Restaurants & Cafés"
+ },
+ {
+  "slug": "burger-king-ganga-expressway",
+  "title": "Burger King",
+  "location": "Ganga Expressway, Uttar Pradesh",
+  "cat": "restaurant",
+  "scope": "Architecture · Drive-thru · BK Café",
+  "featured": false,
+  "desc": "A standalone highway drive-thru with a walnut-clad first floor, a BK Café wing and a red canopy over the pick-up window, planned for expressway traffic with a dedicated drive lane, staff stair and rear service yard.",
+  "cover": "assets/img/work/burger-king-ganga-expressway/cover.jpg",
+  "images": [
+   {
+    "src": "assets/img/work/burger-king-ganga-expressway/01.jpg",
+    "w": 1600,
+    "h": 725
+   },
+   {
+    "src": "assets/img/work/burger-king-ganga-expressway/02.jpg",
+    "w": 1600,
+    "h": 725
+   },
+   {
+    "src": "assets/img/work/burger-king-ganga-expressway/03.jpg",
+    "w": 1600,
+    "h": 725
+   },
+   {
+    "src": "assets/img/work/burger-king-ganga-expressway/04.jpg",
+    "w": 1600,
+    "h": 726
+   }
+  ],
+  "catLabel": "Restaurants & Cafés"
+ },
+ {
+  "slug": "burger-king-muktsar",
+  "title": "Burger King",
+  "location": "Muktsar, Punjab",
+  "cat": "restaurant",
+  "scope": "Storefront · Drive-thru · Interiors · 3D views",
+  "featured": false,
+  "desc": "A ten-view 3D package for a new Burger King in Muktsar: store front and drive-thru perspectives, the food-court frontage, the order counter, and dining areas in orange booths, oak tables and the Whopper wall.",
+  "cover": "assets/img/work/burger-king-muktsar/cover.jpg",
+  "images": [
+   {
+    "src": "assets/img/work/burger-king-muktsar/01.jpg",
+    "w": 1333,
+    "h": 762
+   },
+   {
+    "src": "assets/img/work/burger-king-muktsar/02.jpg",
+    "w": 1264,
+    "h": 713
+   },
+   {
+    "src": "assets/img/work/burger-king-muktsar/03.jpg",
+    "w": 1503,
+    "h": 726
+   },
+   {
+    "src": "assets/img/work/burger-king-muktsar/04.jpg",
+    "w": 1595,
+    "h": 918
+   },
+   {
+    "src": "assets/img/work/burger-king-muktsar/05.jpg",
+    "w": 1600,
+    "h": 746
+   },
+   {
+    "src": "assets/img/work/burger-king-muktsar/06.jpg",
+    "w": 1600,
+    "h": 745
+   },
+   {
+    "src": "assets/img/work/burger-king-muktsar/07.jpg",
+    "w": 1600,
+    "h": 764
+   },
+   {
+    "src": "assets/img/work/burger-king-muktsar/08.jpg",
+    "w": 1426,
+    "h": 720
+   },
+   {
+    "src": "assets/img/work/burger-king-muktsar/09.jpg",
+    "w": 1440,
+    "h": 729
+   },
+   {
+    "src": "assets/img/work/burger-king-muktsar/10.jpg",
+    "w": 1289,
+    "h": 787
+   }
+  ],
+  "catLabel": "Restaurants & Cafés"
+ },
+ {
+  "slug": "burger-king-boulevard",
+  "title": "Burger King",
+  "location": "Boulevard Mall, Greater Noida",
+  "cat": "restaurant",
+  "scope": "Mall counter · BK Café · Brand fit-out",
+  "featured": false,
+  "desc": "A food-court counter for Burger King and BK Café inside Boulevard Mall: digital menu boards, self-order kiosks, a walnut back wall and the brand's red fascia, with the side elevation resolved for the mall corridor.",
+  "cover": "assets/img/work/burger-king-boulevard/cover.jpg",
+  "images": [
+   {
+    "src": "assets/img/work/burger-king-boulevard/01.jpg",
+    "w": 1600,
+    "h": 822
+   },
+   {
+    "src": "assets/img/work/burger-king-boulevard/02.jpg",
+    "w": 1600,
+    "h": 900
+   }
+  ],
+  "catLabel": "Restaurants & Cafés"
+ },
+ {
   "slug": "cbtl-janakpuri",
   "title": "The Coffee Bean & Tea Leaf",
   "location": "Janakpuri, New Delhi",

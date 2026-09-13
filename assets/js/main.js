@@ -413,19 +413,12 @@
     });
   }
 
-  /* ---------- hero video: hide slideshow caption once the loop plays ---------- */
-  const heroVideo = $(".hero__video");
-  if (heroVideo && hero) {
-    heroVideo.addEventListener("playing", () => hero.classList.add("hero--video"), { once: true });
-    heroVideo.play().catch(() => {});
-  }
-
   /* ---------- showreel ---------- */
   const reel = $("[data-reel-modal]");
   if (reel) {
     const vid = $("video", reel);
-    const openReel = () => { reel.hidden = false; document.body.classList.add("no-scroll"); const hv = $(".hero__video"); if (hv) hv.pause(); vid.currentTime = 0; vid.play().catch(() => {}); };
-    const closeReel = () => { vid.pause(); reel.hidden = true; document.body.classList.remove("no-scroll"); const hv = $(".hero__video"); if (hv) hv.play().catch(() => {}); };
+    const openReel = () => { reel.hidden = false; document.body.classList.add("no-scroll"); vid.currentTime = 0; vid.play().catch(() => {}); };
+    const closeReel = () => { vid.pause(); reel.hidden = true; document.body.classList.remove("no-scroll"); };
     $$("[data-showreel]").forEach((b) => b.addEventListener("click", openReel));
     $("[data-reel-close]", reel).addEventListener("click", closeReel);
     reel.addEventListener("click", (e) => { if (e.target === reel) closeReel(); });

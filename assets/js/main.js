@@ -174,9 +174,11 @@
     $("[data-loc]", modal).textContent = p.location;
     $("[data-scope]", modal).textContent = p.scope;
     $("[data-count]", modal).textContent = p.images.length + (p.images.length === 1 ? " view" : " views");
-    $("[data-desc]", modal).textContent = p.desc;
+    const descEl = $("[data-desc]", modal);
+    descEl.textContent = p.desc;
+    applyClamp(descEl, 3, true);
     $("[data-gallery]", modal).innerHTML = p.images.map((im, i) =>
-      '<figure data-index="' + i + '"' + (im.w / im.h > 2.2 ? ' class="wide"' : "") + '><img ' + (i < 2 ? "" : 'loading="lazy" ') + 'decoding="async" src="' + im.src + '" width="' + im.w + '" height="' + im.h + '" alt="' + esc(p.title + " view " + (i + 1)) + '"></figure>'
+      '<figure data-index="' + i + '"' + (im.w / im.h > 2.2 ? ' class="wide"' : (im.w < 900 ? ' class="small"' : "")) + '><img ' + (i < 2 ? "" : 'loading="lazy" ') + 'decoding="async" src="' + im.src + '" width="' + im.w + '" height="' + im.h + '" alt="' + esc(p.title + " view " + (i + 1)) + '"></figure>'
     ).join("");
     const prev = P[(idx - 1 + P.length) % P.length], next = P[(idx + 1) % P.length];
     $("[data-prev-link] span", modal).textContent = prev.title + " · " + prev.location;
@@ -296,6 +298,102 @@
     observeReveals.t = setTimeout(() => $$(".reveal:not(.in)").forEach((el) => el.classList.add("in")), 4000);
   }
   observeReveals();
+
+  /* ---------- read more (clamp) ---------- */
+  function applyClamp(el, lines, reset) {
+    if (reset) {
+      const old = el.nextElementSibling;
+      if (old && old.classList.contains("clamp-btn")) old.remove();
+      el.classList.remove("open");
+    }
+    el.style.setProperty("--lines", lines);
+    el.classList.add("clamp");
+    const check = () => {
+      if (el.classList.contains("open")) return;
+      const overflows = el.scrollHeight > el.clientHeight + 2;
+      let btn = el.nextElementSibling && el.nextElementSibling.classList.contains("clamp-btn") ? el.nextElementSibling : null;
+      if (overflows && !btn) {
+        btn = document.createElement("button");
+        btn.type = "button"; btn.className = "clamp-btn"; btn.textContent = "Read more"; btn.setAttribute("aria-expanded", "false");
+        btn.addEventListener("click", () => {
+          const open = el.classList.toggle("open");
+          btn.textContent = open ? "Show less" : "Read more";
+          btn.setAttribute("aria-expanded", String(open));
+        });
+        el.insertAdjacentElement("afterend", btn);
+      } else if (!overflows && btn) { btn.remove(); }
+    };
+    check();
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(check);
+  }
+  $$("[data-clamp]").forEach((el) => applyClamp(el, parseInt(el.dataset.clamp, 10) || 3, false));
+  let rt; window.addEventListener("resize", () => { clearTimeout(rt); rt = setTimeout(() => $$("[data-clamp]").forEach((el) => applyClamp(el, parseInt(el.dataset.clamp, 10) || 3, false)), 200); });
+
+  /* ---------- service "what's included" toggles ---------- */
+  $$(".service__toggle").forEach((btn) => {
+    const list = btn.nextElementSibling;
+    btn.addEventListener("click", () => {
+      const open = btn.getAttribute("aria-expanded") !== "true";
+      btn.setAttribute("aria-expanded", String(open));
+      if (list) list.hidden = !open;
+    });
+  });
+
+  /* ---------- process tabs ---------- */
+  const tabs = $$(".tab[data-tab]");
+  if (tabs.length) {
+    tabs.forEach((t) => t.addEventListener("click", () => {
+      tabs.forEach((x) => x.setAttribute("aria-selected", String(x === t)));
+      $$(".tab-panel[data-panel]").forEach((p) => p.classList.toggle("is-active", p.dataset.panel === t.dataset.tab));
+    }));
+  }
+
+  /* ---------- case studies ---------- */
+  const CS = window.ADB_CASE_STUDIES || [];
+  const byslug = (slug) => P.find((p) => p.slug === slug) || {};
+  const csTeaser = $("[data-cs-teaser]");
+  if (csTeaser && CS.length) {
+    const n = parseInt(csTeaser.dataset.csTeaser || "3", 10);
+    csTeaser.innerHTML = CS.slice(0, n).map((c) => {
+      const pr = byslug(c.project);
+      return '<a class="cs-card reveal" href="case-studies.html#cs-' + c.id + '">' +
+        '<div class="cs-card__media"><img loading="lazy" decoding="async" src="' + (pr.cover || "") + '" alt="' + esc(c.title) + '"></div>' +
+        '<div class="cs-card__body"><span class="cs-card__theme">' + esc(c.theme) + '</span><h3 class="cs-card__title">' + esc(c.title) + '</h3>' +
+        '<p class="cs-card__meta">' + esc(c.brand) + ' · ' + esc(c.location) + '</p>' +
+        '<span class="link-more">Read the case study ' + ICON.arrow + '</span></div></a>';
+    }).join("");
+    observeReveals();
+  }
+  const csList = $("[data-cs-list]");
+  if (csList && CS.length) {
+    const nav = $("[data-theme-nav]");
+    if (nav) nav.innerHTML = CS.map((c) => '<a href="#cs-' + c.id + '">' + esc(c.theme) + '</a>').join("");
+    csList.innerHTML = CS.map((c, i) => {
+      const pr = byslug(c.project);
+      const li = (arr) => arr.map((x) => "<li>" + esc(x) + "</li>").join("");
+      return '<article class="cs reveal" id="cs-' + c.id + '">' +
+        '<div class="cs__top"><div class="cs__media"><img loading="' + (i < 2 ? "eager" : "lazy") + '" decoding="async" src="' + (pr.cover || "") + '" alt="' + esc(pr.title ? pr.title + ", " + pr.location : c.title) + '"></div>' +
+        '<div class="cs__body"><span class="cs__theme">' + esc(c.theme) + '</span><h3 class="cs__title">' + esc(c.title) + '</h3>' +
+        '<p class="cs__meta"><b>' + esc(c.brand) + '</b> · ' + esc(c.location) + '</p>' +
+        '<p class="cs__challenge"><b>The brief.</b> ' + esc(c.challenge) + '</p></div></div>' +
+        '<details class="cs__more"><summary>How ADB approached it, and what the client got</summary><div class="cs__detail">' +
+        '<div><h4>Approach</h4><ul>' + li(c.approach) + '</ul></div><div><h4>Outcome</h4><ul>' + li(c.outcome) + '</ul></div>' +
+        (pr.slug ? '<a class="link-more" href="work.html#project=' + pr.slug + '">See the ' + esc(pr.title) + ' gallery (' + pr.images.length + ' views) ' + ICON.arrow + '</a>' : "") +
+        '</div></details></article>';
+    }).join("");
+    observeReveals();
+    const openFromHash = () => {
+      const m = location.hash.match(/#cs-([\w-]+)/);
+      if (!m) return;
+      const el = document.getElementById("cs-" + m[1]);
+      if (!el) return;
+      el.classList.add("in");
+      const d = $("details", el); if (d) d.open = true;
+      setTimeout(() => el.scrollIntoView({ behavior: "smooth", block: "start" }), 50);
+    };
+    openFromHash();
+    window.addEventListener("hashchange", openFromHash);
+  }
 
   /* ---------- misc ---------- */
   $$("[data-year]").forEach((el) => { el.textContent = new Date().getFullYear(); });

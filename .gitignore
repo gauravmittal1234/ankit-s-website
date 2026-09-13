@@ -1,0 +1,5 @@
+# Source material (330 MB) is not part of the site
+*.pdf
+.DS_Store
+Thumbs.db
+.claude/

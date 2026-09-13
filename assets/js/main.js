@@ -395,6 +395,18 @@
     window.addEventListener("hashchange", openFromHash);
   }
 
+  /* ---------- brands: view all ---------- */
+  const brandsBtn = $("[data-brands-toggle]");
+  if (brandsBtn) {
+    const panel = document.getElementById(brandsBtn.getAttribute("aria-controls"));
+    brandsBtn.addEventListener("click", () => {
+      const open = brandsBtn.getAttribute("aria-expanded") !== "true";
+      brandsBtn.setAttribute("aria-expanded", String(open));
+      brandsBtn.textContent = open ? "Hide brands" : "View all brands";
+      if (panel) panel.hidden = !open;
+    });
+  }
+
   /* ---------- misc ---------- */
   $$("[data-year]").forEach((el) => { el.textContent = new Date().getFullYear(); });
   $$("[data-project-count]").forEach((el) => { el.textContent = P.length; });

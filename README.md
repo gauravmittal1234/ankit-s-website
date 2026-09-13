@@ -15,3 +15,11 @@ Static site for Arcus Design Build (ADB), Noida. No build step: plain HTML, CSS 
 ## Hosting
 
 Designed for GitHub Pages: Settings → Pages → Deploy from branch `main`, folder `/ (root)`.
+
+## Cache busting
+
+Asset links carry a `?v=` version. After changing CSS or JS, run:
+
+```bash
+python3 -c "import re,time;v=time.strftime('%Y%m%d%H%M');[open(f,'w').write(re.sub(r'(assets/(?:css|js)/[\\w-]+\\.(?:css|js))(\\?v=\\d+)?', r'\\1?v='+v, open(f).read())) for f in ['index.html','work.html','case-studies.html']]"
+```

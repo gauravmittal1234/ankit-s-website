@@ -353,13 +353,76 @@ window.ADB_PROJECTS = [
   "catLabel": "Restaurants & Cafés"
  },
  {
+  "slug": "burger-king-meerut",
+  "title": "Burger King",
+  "location": "Downtown Mall, Meerut, Uttar Pradesh",
+  "cat": "restaurant",
+  "scope": "Storefront · Interiors · 3D visualisation",
+  "featured": true,
+  "desc": "A corner Burger King at Downtown Mall with full-height glazing under the brand's red band and Devanagari signage, framed by a white perforated screen. Inside, the Home of the Whopper wall in oak and brick, the layered flame ceiling in brand colours, red and tan booths, communal oak tables and a BK Café counter.",
+  "cover": "assets/img/work/burger-king-meerut/cover.jpg",
+  "images": [
+   {
+    "src": "assets/img/work/burger-king-meerut/01.jpg",
+    "w": 1600,
+    "h": 900
+   },
+   {
+    "src": "assets/img/work/burger-king-meerut/02.jpg",
+    "w": 1600,
+    "h": 900
+   },
+   {
+    "src": "assets/img/work/burger-king-meerut/03.jpg",
+    "w": 1600,
+    "h": 900
+   },
+   {
+    "src": "assets/img/work/burger-king-meerut/04.jpg",
+    "w": 1600,
+    "h": 900
+   },
+   {
+    "src": "assets/img/work/burger-king-meerut/05.jpg",
+    "w": 1600,
+    "h": 900
+   },
+   {
+    "src": "assets/img/work/burger-king-meerut/06.jpg",
+    "w": 1600,
+    "h": 900
+   },
+   {
+    "src": "assets/img/work/burger-king-meerut/07.jpg",
+    "w": 1600,
+    "h": 900
+   },
+   {
+    "src": "assets/img/work/burger-king-meerut/08.jpg",
+    "w": 1600,
+    "h": 900
+   },
+   {
+    "src": "assets/img/work/burger-king-meerut/09.jpg",
+    "w": 1600,
+    "h": 900
+   },
+   {
+    "src": "assets/img/work/burger-king-meerut/10.jpg",
+    "w": 1600,
+    "h": 900
+   }
+  ],
+  "catLabel": "Restaurants & Cafés"
+ },
+ {
   "slug": "burger-king-ganga-expressway",
   "title": "Burger King",
   "location": "Ganga Expressway, Uttar Pradesh",
   "cat": "restaurant",
   "scope": "Architecture · Drive-thru · BK Café",
   "featured": false,
-  "desc": "A standalone highway drive-thru with a walnut-clad first floor, a BK Café wing and a red canopy over the pick-up window, planned for expressway traffic with a dedicated drive lane, staff stair and rear service yard.",
+  "desc": "A standalone highway drive-thru on the Ganga Expressway with a walnut-clad upper band, a BK Café wing and a red canopy over the pick-up window. Four-camera exterior package resolved for expressway traffic, with a dedicated drive lane, staff stair and rear service yard.",
   "cover": "assets/img/work/burger-king-ganga-expressway/cover.jpg",
   "images": [
    {
@@ -379,6 +442,31 @@ window.ADB_PROJECTS = [
    },
    {
     "src": "assets/img/work/burger-king-ganga-expressway/04.jpg",
+    "w": 1600,
+    "h": 726
+   },
+   {
+    "src": "assets/img/work/burger-king-ganga-expressway/05.jpg",
+    "w": 1600,
+    "h": 725
+   },
+   {
+    "src": "assets/img/work/burger-king-ganga-expressway/06.jpg",
+    "w": 1600,
+    "h": 725
+   },
+   {
+    "src": "assets/img/work/burger-king-ganga-expressway/07.jpg",
+    "w": 1600,
+    "h": 725
+   },
+   {
+    "src": "assets/img/work/burger-king-ganga-expressway/08.jpg",
+    "w": 1600,
+    "h": 725
+   },
+   {
+    "src": "assets/img/work/burger-king-ganga-expressway/09.jpg",
     "w": 1600,
     "h": 726
    }
@@ -1293,6 +1381,152 @@ window.ADB_PROJECTS = [
   "catLabel": "Food Courts"
  },
  {
+  "slug": "food-forum-kashipur",
+  "title": "Food Forum",
+  "location": "Kashipur, Uttarakhand",
+  "cat": "food-court",
+  "scope": "Architecture · Facade · Food court interiors",
+  "featured": false,
+  "desc": "A standalone Food Forum in Kashipur with a long brick-and-glass frontage carrying McDonald's, KFC, Pizza Hut, Costa Coffee, Haldiram's and Subway. Inside, ring-lit ceilings and green banquette bays divide a deep hall into seating zones, with a Costa Coffee counter anchoring one end.",
+  "cover": "assets/img/work/food-forum-kashipur/cover.jpg",
+  "images": [
+   {
+    "src": "assets/img/work/food-forum-kashipur/01.jpg",
+    "w": 1600,
+    "h": 783
+   },
+   {
+    "src": "assets/img/work/food-forum-kashipur/02.jpg",
+    "w": 1600,
+    "h": 1109
+   },
+   {
+    "src": "assets/img/work/food-forum-kashipur/03.jpg",
+    "w": 1600,
+    "h": 1109
+   },
+   {
+    "src": "assets/img/work/food-forum-kashipur/04.jpg",
+    "w": 1600,
+    "h": 1109
+   },
+   {
+    "src": "assets/img/work/food-forum-kashipur/05.jpg",
+    "w": 1600,
+    "h": 1109
+   },
+   {
+    "src": "assets/img/work/food-forum-kashipur/06.jpg",
+    "w": 1600,
+    "h": 1109
+   },
+   {
+    "src": "assets/img/work/food-forum-kashipur/07.jpg",
+    "w": 1600,
+    "h": 618
+   },
+   {
+    "src": "assets/img/work/food-forum-kashipur/08.jpg",
+    "w": 1600,
+    "h": 427
+   }
+  ],
+  "catLabel": "Food Courts"
+ },
+ {
+  "slug": "food-court-saya-south-x",
+  "title": "I Luv Food · Saya South X",
+  "location": "Greater Noida, Uttar Pradesh",
+  "cat": "food-court",
+  "scope": "Food court interiors · Material palette · Brand zoning",
+  "featured": true,
+  "desc": "A food court for the I Luv Food brand at Saya South X, designed around a natural, contemporary palette of terracotta brick, oak, rattan and deep green. Planted dividers and a ribbed timber portal frame the entrance; inside, disc pendants and coloured acoustic clouds float over booth and banquette seating, with counters for Subway, Kings Kulfi, Boba Tea, Casa Loco and Flavours Café along the perimeter. The set includes the material palette and the counter plan.",
+  "cover": "assets/img/work/food-court-saya-south-x/cover.jpg",
+  "images": [
+   {
+    "src": "assets/img/work/food-court-saya-south-x/01.jpg",
+    "w": 1536,
+    "h": 1024
+   },
+   {
+    "src": "assets/img/work/food-court-saya-south-x/02.jpg",
+    "w": 1507,
+    "h": 913
+   },
+   {
+    "src": "assets/img/work/food-court-saya-south-x/03.jpg",
+    "w": 1600,
+    "h": 1067
+   },
+   {
+    "src": "assets/img/work/food-court-saya-south-x/04.jpg",
+    "w": 1600,
+    "h": 1067
+   },
+   {
+    "src": "assets/img/work/food-court-saya-south-x/05.jpg",
+    "w": 1600,
+    "h": 1067
+   },
+   {
+    "src": "assets/img/work/food-court-saya-south-x/06.jpg",
+    "w": 1600,
+    "h": 1067
+   },
+   {
+    "src": "assets/img/work/food-court-saya-south-x/07.jpg",
+    "w": 1600,
+    "h": 1067
+   },
+   {
+    "src": "assets/img/work/food-court-saya-south-x/08.jpg",
+    "w": 1600,
+    "h": 1067
+   },
+   {
+    "src": "assets/img/work/food-court-saya-south-x/09.jpg",
+    "w": 1536,
+    "h": 1024
+   },
+   {
+    "src": "assets/img/work/food-court-saya-south-x/10.jpg",
+    "w": 1600,
+    "h": 1067
+   },
+   {
+    "src": "assets/img/work/food-court-saya-south-x/11.jpg",
+    "w": 1600,
+    "h": 1067
+   },
+   {
+    "src": "assets/img/work/food-court-saya-south-x/12.jpg",
+    "w": 1600,
+    "h": 1067
+   },
+   {
+    "src": "assets/img/work/food-court-saya-south-x/13.jpg",
+    "w": 1600,
+    "h": 1067
+   },
+   {
+    "src": "assets/img/work/food-court-saya-south-x/14.jpg",
+    "w": 1600,
+    "h": 1067
+   },
+   {
+    "src": "assets/img/work/food-court-saya-south-x/15.jpg",
+    "w": 1536,
+    "h": 1024
+   },
+   {
+    "src": "assets/img/work/food-court-saya-south-x/16.jpg",
+    "w": 1518,
+    "h": 952
+   }
+  ],
+  "catLabel": "Food Courts"
+ },
+ {
   "slug": "food-hub-dhampur",
   "title": "Food Hub Commercial",
   "location": "Nanglasari, Dhampur, Bijnor, Uttar Pradesh",
@@ -1976,60 +2210,375 @@ window.ADB_PROJECTS = [
   "location": "Faridabad, Haryana",
   "cat": "commercial",
   "scope": "Workplace interiors · Execution",
-  "desc": "A corporate office with a veneer-clad reception, glass-partitioned meeting rooms, a boardroom with a lit ceiling and open workstations along the window line.",
+  "desc": "A full-floor corporate office in Faridabad: a veneer-clad reception and lift lobby, glass-partitioned cabins along the window line, open workstations under a black baffle ceiling, acoustic-panelled meeting rooms, a boardroom with a lit cove, a pantry and a cafeteria. Photographed through fit-out and on handover.",
   "cover": "assets/img/work/corporate-office-faridabad/cover.jpg",
   "images": [
    {
     "src": "assets/img/work/corporate-office-faridabad/01.jpg",
+    "w": 1600,
+    "h": 1204
+   },
+   {
+    "src": "assets/img/work/corporate-office-faridabad/02.jpg",
+    "w": 1600,
+    "h": 1204
+   },
+   {
+    "src": "assets/img/work/corporate-office-faridabad/03.jpg",
+    "w": 1600,
+    "h": 1204
+   },
+   {
+    "src": "assets/img/work/corporate-office-faridabad/04.jpg",
+    "w": 1204,
+    "h": 1600
+   },
+   {
+    "src": "assets/img/work/corporate-office-faridabad/05.jpg",
+    "w": 1204,
+    "h": 1600
+   },
+   {
+    "src": "assets/img/work/corporate-office-faridabad/06.jpg",
+    "w": 1600,
+    "h": 1204
+   },
+   {
+    "src": "assets/img/work/corporate-office-faridabad/07.jpg",
+    "w": 1204,
+    "h": 1600
+   },
+   {
+    "src": "assets/img/work/corporate-office-faridabad/08.jpg",
+    "w": 1600,
+    "h": 1204
+   },
+   {
+    "src": "assets/img/work/corporate-office-faridabad/09.jpg",
+    "w": 1600,
+    "h": 1204
+   },
+   {
+    "src": "assets/img/work/corporate-office-faridabad/10.jpg",
+    "w": 1600,
+    "h": 1204
+   },
+   {
+    "src": "assets/img/work/corporate-office-faridabad/11.jpg",
+    "w": 1600,
+    "h": 1204
+   },
+   {
+    "src": "assets/img/work/corporate-office-faridabad/12.jpg",
+    "w": 1600,
+    "h": 1204
+   },
+   {
+    "src": "assets/img/work/corporate-office-faridabad/13.jpg",
+    "w": 1600,
+    "h": 1204
+   },
+   {
+    "src": "assets/img/work/corporate-office-faridabad/14.jpg",
+    "w": 1204,
+    "h": 1600
+   },
+   {
+    "src": "assets/img/work/corporate-office-faridabad/15.jpg",
+    "w": 1600,
+    "h": 1204
+   },
+   {
+    "src": "assets/img/work/corporate-office-faridabad/16.jpg",
+    "w": 1600,
+    "h": 1204
+   },
+   {
+    "src": "assets/img/work/corporate-office-faridabad/17.jpg",
+    "w": 1600,
+    "h": 1204
+   },
+   {
+    "src": "assets/img/work/corporate-office-faridabad/18.jpg",
+    "w": 1204,
+    "h": 1600
+   },
+   {
+    "src": "assets/img/work/corporate-office-faridabad/19.jpg",
+    "w": 1600,
+    "h": 1204
+   },
+   {
+    "src": "assets/img/work/corporate-office-faridabad/20.jpg",
+    "w": 963,
+    "h": 1280
+   },
+   {
+    "src": "assets/img/work/corporate-office-faridabad/21.jpg",
+    "w": 963,
+    "h": 1280
+   },
+   {
+    "src": "assets/img/work/corporate-office-faridabad/22.jpg",
+    "w": 963,
+    "h": 1280
+   },
+   {
+    "src": "assets/img/work/corporate-office-faridabad/23.jpg",
+    "w": 1280,
+    "h": 963
+   },
+   {
+    "src": "assets/img/work/corporate-office-faridabad/24.jpg",
+    "w": 963,
+    "h": 1280
+   },
+   {
+    "src": "assets/img/work/corporate-office-faridabad/25.jpg",
+    "w": 963,
+    "h": 1280
+   },
+   {
+    "src": "assets/img/work/corporate-office-faridabad/26.jpg",
+    "w": 963,
+    "h": 1280
+   },
+   {
+    "src": "assets/img/work/corporate-office-faridabad/27.jpg",
+    "w": 1280,
+    "h": 963
+   },
+   {
+    "src": "assets/img/work/corporate-office-faridabad/28.jpg",
+    "w": 1280,
+    "h": 963
+   },
+   {
+    "src": "assets/img/work/corporate-office-faridabad/29.jpg",
+    "w": 963,
+    "h": 1280
+   },
+   {
+    "src": "assets/img/work/corporate-office-faridabad/30.jpg",
+    "w": 1280,
+    "h": 963
+   },
+   {
+    "src": "assets/img/work/corporate-office-faridabad/31.jpg",
+    "w": 1280,
+    "h": 963
+   },
+   {
+    "src": "assets/img/work/corporate-office-faridabad/32.jpg",
+    "w": 1280,
+    "h": 963
+   },
+   {
+    "src": "assets/img/work/corporate-office-faridabad/33.jpg",
+    "w": 1280,
+    "h": 963
+   },
+   {
+    "src": "assets/img/work/corporate-office-faridabad/34.jpg",
+    "w": 1280,
+    "h": 963
+   },
+   {
+    "src": "assets/img/work/corporate-office-faridabad/35.jpg",
     "w": 370,
     "h": 278
    },
    {
-    "src": "assets/img/work/corporate-office-faridabad/02.jpg",
+    "src": "assets/img/work/corporate-office-faridabad/36.jpg",
     "w": 372,
     "h": 280
    },
    {
-    "src": "assets/img/work/corporate-office-faridabad/03.jpg",
+    "src": "assets/img/work/corporate-office-faridabad/37.jpg",
     "w": 367,
     "h": 276
    },
    {
-    "src": "assets/img/work/corporate-office-faridabad/04.jpg",
+    "src": "assets/img/work/corporate-office-faridabad/38.jpg",
     "w": 370,
     "h": 278
    }
   ],
   "catLabel": "Commercial & Institutional",
-  "featured": false
+  "featured": true
  },
  {
   "slug": "sales-office-gurgaon",
-  "title": "Sales Office",
+  "title": "Ambrosia Sales Office",
   "location": "Gurugram, Haryana",
   "cat": "commercial",
-  "scope": "Sales gallery interiors",
-  "desc": "A real-estate sales gallery with book-matched marble walls, a model display, ring pendants and leather lounge seating facing the city view.",
+  "scope": "Sales gallery interiors · Execution",
+  "desc": "A real-estate experience centre built around a lit scale model of the township. Book-matched marble walls and floors, brass reveals and ring pendants set the tone at the entrance, with glass-partitioned meeting rooms, a herringbone-floored boardroom, a lounge over the city view and a marble pantry behind. Photographed on completion.",
   "cover": "assets/img/work/sales-office-gurgaon/cover.jpg",
   "images": [
    {
     "src": "assets/img/work/sales-office-gurgaon/01.jpg",
+    "w": 1600,
+    "h": 1200
+   },
+   {
+    "src": "assets/img/work/sales-office-gurgaon/02.jpg",
+    "w": 1200,
+    "h": 1600
+   },
+   {
+    "src": "assets/img/work/sales-office-gurgaon/03.jpg",
+    "w": 1600,
+    "h": 1200
+   },
+   {
+    "src": "assets/img/work/sales-office-gurgaon/04.jpg",
+    "w": 1200,
+    "h": 1600
+   },
+   {
+    "src": "assets/img/work/sales-office-gurgaon/05.jpg",
+    "w": 1200,
+    "h": 1600
+   },
+   {
+    "src": "assets/img/work/sales-office-gurgaon/06.jpg",
+    "w": 1200,
+    "h": 1600
+   },
+   {
+    "src": "assets/img/work/sales-office-gurgaon/07.jpg",
+    "w": 1600,
+    "h": 1200
+   },
+   {
+    "src": "assets/img/work/sales-office-gurgaon/08.jpg",
+    "w": 1200,
+    "h": 1600
+   },
+   {
+    "src": "assets/img/work/sales-office-gurgaon/09.jpg",
+    "w": 1200,
+    "h": 1600
+   },
+   {
+    "src": "assets/img/work/sales-office-gurgaon/10.jpg",
+    "w": 1600,
+    "h": 1200
+   },
+   {
+    "src": "assets/img/work/sales-office-gurgaon/11.jpg",
+    "w": 1200,
+    "h": 1600
+   },
+   {
+    "src": "assets/img/work/sales-office-gurgaon/12.jpg",
+    "w": 1600,
+    "h": 1200
+   },
+   {
+    "src": "assets/img/work/sales-office-gurgaon/13.jpg",
+    "w": 1200,
+    "h": 1600
+   },
+   {
+    "src": "assets/img/work/sales-office-gurgaon/14.jpg",
+    "w": 1200,
+    "h": 1600
+   },
+   {
+    "src": "assets/img/work/sales-office-gurgaon/15.jpg",
+    "w": 1200,
+    "h": 1600
+   },
+   {
+    "src": "assets/img/work/sales-office-gurgaon/16.jpg",
+    "w": 1200,
+    "h": 1600
+   },
+   {
+    "src": "assets/img/work/sales-office-gurgaon/17.jpg",
+    "w": 1200,
+    "h": 1600
+   },
+   {
+    "src": "assets/img/work/sales-office-gurgaon/18.jpg",
+    "w": 1200,
+    "h": 1600
+   },
+   {
+    "src": "assets/img/work/sales-office-gurgaon/19.jpg",
+    "w": 1200,
+    "h": 1600
+   },
+   {
+    "src": "assets/img/work/sales-office-gurgaon/20.jpg",
+    "w": 1600,
+    "h": 1200
+   },
+   {
+    "src": "assets/img/work/sales-office-gurgaon/21.jpg",
+    "w": 1600,
+    "h": 1200
+   },
+   {
+    "src": "assets/img/work/sales-office-gurgaon/22.jpg",
+    "w": 1200,
+    "h": 1600
+   },
+   {
+    "src": "assets/img/work/sales-office-gurgaon/23.jpg",
+    "w": 1200,
+    "h": 1600
+   },
+   {
+    "src": "assets/img/work/sales-office-gurgaon/24.jpg",
+    "w": 1200,
+    "h": 1600
+   },
+   {
+    "src": "assets/img/work/sales-office-gurgaon/25.jpg",
+    "w": 1200,
+    "h": 1600
+   },
+   {
+    "src": "assets/img/work/sales-office-gurgaon/26.jpg",
+    "w": 1200,
+    "h": 1600
+   },
+   {
+    "src": "assets/img/work/sales-office-gurgaon/27.jpg",
+    "w": 1200,
+    "h": 1600
+   },
+   {
+    "src": "assets/img/work/sales-office-gurgaon/28.jpg",
+    "w": 1600,
+    "h": 1200
+   },
+   {
+    "src": "assets/img/work/sales-office-gurgaon/29.jpg",
+    "w": 1600,
+    "h": 1204
+   },
+   {
+    "src": "assets/img/work/sales-office-gurgaon/30.jpg",
     "w": 388,
     "h": 271
    },
    {
-    "src": "assets/img/work/sales-office-gurgaon/02.jpg",
+    "src": "assets/img/work/sales-office-gurgaon/31.jpg",
     "w": 415,
     "h": 554
    },
    {
-    "src": "assets/img/work/sales-office-gurgaon/03.jpg",
+    "src": "assets/img/work/sales-office-gurgaon/32.jpg",
     "w": 369,
     "h": 493
    }
   ],
   "catLabel": "Commercial & Institutional",
-  "featured": false
+  "featured": true
  },
  {
   "slug": "creche-hero-motocorp",

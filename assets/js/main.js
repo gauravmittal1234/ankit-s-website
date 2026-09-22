@@ -5,8 +5,8 @@
   const $$ = (s, c = document) => Array.from(c.querySelectorAll(s));
   const P = window.ADB_PROJECTS || [];
   const CATS = window.ADB_CATEGORIES || {};
-  const WA = "917827897695";
-  const EMAIL = "ankit@thearcusdesignbuild.com";
+  const WA = "918447882296";
+  const EMAIL = "info@thearcusdesignbuild.com";
   let io; // IntersectionObserver for reveal animations (declared early: used before the section below)
   const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 
